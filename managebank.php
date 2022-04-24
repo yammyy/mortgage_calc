@@ -1,8 +1,9 @@
 <?php 
-    $db_host='localhost'; // хост
-    $db_name='id18828332_yammyydb'; // бд
-    $db_user='id18828332_yammyy'; // пользователь бд
-    $db_pass='i92lBe5pB72j_'; // пароль к бд
+    $config = parse_ini_file('../db.ini', true);
+    $db_host=$config['connect']['db_host']; // хост
+    $db_name=$config['connect']['db_name']; // бд
+    $db_user=$config['connect']['db_user']; // пользователь бд
+    $db_pass=$config['connect']['db_pass']; // пароль к бд
     $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
     // Check connection
