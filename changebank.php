@@ -45,8 +45,11 @@
     <header id="header">
         <div class="container">
             <div class="row row-header">
-                <div class="col align-self-center">
+                <div class="col col-11 align-self-center">
                     <h1>Mortgage Calculator</h1>
+                </div>
+                <div class="col col-1 align-self-center">
+                    <p><a data-toggle="tooltip" title="Go to calculator" href="index.php"><span class="fa fa-calculator" /> To calculator</a></p>
                 </div>
             </div>
         </div>
@@ -54,7 +57,7 @@
     <div class="container">
         <div class="row row-content">
            <div class="col-12">
-              <h3>Bank Management <a data-toggle="tooltip" title="Go to calculator" href="index.php"><span class="fa fa-home" /></a></h3>
+              <h3>Bank Management</h3>
            </div>
             <div class="col-12 col-md-9">
                 <form method="post" action="managebank.php" onsubmit="valaddsub(event)">

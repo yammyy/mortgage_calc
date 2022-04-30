@@ -5,3 +5,37 @@ a{
 .invalid {
   border: red solid 3px;
 }
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+th{
+    border:1px solid black;
+    background-color:black;
+    color:white;
+    font-size: large;
+}
+td{
+    border:1px solid;
+}
+tfoot td{
+    border:1px solid black;
+    background-color:black;
+    color:white;
+    font-weight:bold;
+    font-size: large;
+}
+.yearTotal {
+    border:1px solid black;
+    background-color:gray;
+}
+.yearTotal td{
+    border:1px solid gray;
+    background-color:gray;
+    color:black;
+    font-weight:bold;
+    font-size: medium;
+}
+footer{
+    height:50px;
+}

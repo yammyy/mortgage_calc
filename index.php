@@ -81,12 +81,38 @@
                         <p class="col-md-1"><a href="changebank.php" class="btn btn-dark" data-toggle="tooltip" title="Add bank"><span class="fa fa-plus" /></a></p>
                     </div>
                     <div class="form-group row">
-                        <h4 id="resultCalc" name="resultcalc" class="col-md-12">$</h4>
+                        <div class="col-md-4"><h4>Monthly payment</h4></div>
+                        <h4 id="resultCalc" name="resultcalc" class="col-md-8">$</h4>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4">Download payment</div>
+                        <p id="resultDP" name="resultdp" class="col-md-8">$</p>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4">Loan amount</div>
+                        <p id="resultLA" name="resultla" class="col-md-8">$</p>
+                    </div>
+                    <div id="resultTable" name="resulttable" class="form-group row d-none">
+                        <div class="col-md-12">
+                            <table class="container">
+                                <thead>
+                                    <tr class="row">
+                                        <th class="col col-4">Payment #</th>
+                                        <th class="col col-4">Payment</th>
+                                        <th class="col col-4">Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="resultTableP" name="resulttablep"></tbody>
+                                <tfoot id="totalRes" name="totalres"></tfoot>
+                            </table>
+                        </div>
                     </div>
                 </form>
             </div>
        </div>
     </div>
+    <footer>
+    </footer>
     <script src="js/scriptsMain.js"></script>
 </body>
 </html>
